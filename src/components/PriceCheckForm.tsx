@@ -44,7 +44,7 @@ export default function PriceCheckForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   
   const {
     register,
@@ -132,14 +132,6 @@ export default function PriceCheckForm() {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === slideshowImages.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slideshowImages.length - 1 : prev - 1));
   };
 
   return (

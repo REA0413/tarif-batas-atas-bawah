@@ -7,7 +7,7 @@ export async function setupDatabase() {
     .select('table_name')
     .eq('table_schema', 'public');
   
-  const tableNames = existingTables?.map(t => t.table_name) || [];
+  // const tableNames = existingTables?.map(t => t.table_name) || [];
   
   // Create tables if they don't exist
   const queries = [

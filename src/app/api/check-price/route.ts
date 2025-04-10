@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
     const serviceCategory = airlineData.category;
     
     // STEP 3: Find matching routes in all relevant tables
-    let results: Result[] = [];
+    const results: Result[] = [];
     const tablesToCheck = formData.aircraftType === 'I DON\'T KNOW' 
       ? ['JET', 'SMALL PROPELLER', 'BIG PROPELLER'] 
       : [formData.aircraftType];
