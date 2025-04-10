@@ -2,10 +2,10 @@ import { supabase } from './supabase';
 
 export async function setupDatabase() {
   // Check if tables exist first
-  const { data: existingTables } = await supabase
-    .from('information_schema.tables')
-    .select('table_name')
-    .eq('table_schema', 'public');
+  // const { data: existingTables } = await supabase
+    // .from('information_schema.tables')
+    // .select('table_name')
+    // .eq('table_schema', 'public');
   
   // const tableNames = existingTables?.map(t => t.table_name) || [];
   
