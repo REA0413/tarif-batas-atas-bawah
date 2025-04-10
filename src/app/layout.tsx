@@ -21,6 +21,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'Tarif Batas Atas Bawah App',
   description: 'Aplikasi untuk mengecek batas atas dan batas bawah tarif penerbangan domestik Indonesia. An app to check the maximum and minimum basic fare offered by an airline in a Indonesian domestic route. Ceiling Fare and Floor Fare Domestic Flight Validator in Indonesia',
+  verification: {
+    google: 'A1RAIcX1hfNGRn-aqHOXd17EQnjMvEGd1GXGBlEZhas',
+  },
 };
 
 export default function RootLayout({
